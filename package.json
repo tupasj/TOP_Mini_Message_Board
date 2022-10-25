@@ -1,28 +1,16 @@
 {
-  "name": "top_mini_message_board",
-  "version": "1.0.0",
-  "description": "Simple message board project to demonstrate basic Express.js skills. Part of The Odin Project curriculum.",
-  "main": "app.js",
+  "name": "top-mini-message-board",
+  "version": "0.0.0",
+  "private": true,
   "scripts": {
-    "start": "node app",
-    "dev": "nodemon -e app,html,css,js,ejs"
+    "start": "node ./bin/www"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/tupasj/TOP_Mini_Message_Board.git"
-  },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/tupasj/TOP_Mini_Message_Board/issues"
-  },
-  "homepage": "https://github.com/tupasj/TOP_Mini_Message_Board#readme",
   "dependencies": {
-    "ejs": "^3.1.8",
-    "express": "^4.18.2"
-  },
-  "devDependencies": {
-    "nodemon": "^2.0.20"
+    "cookie-parser": "~1.4.4",
+    "debug": "~2.6.9",
+    "ejs": "~2.6.1",
+    "express": "~4.16.1",
+    "http-errors": "~1.6.3",
+    "morgan": "~1.9.1"
   }
 }
