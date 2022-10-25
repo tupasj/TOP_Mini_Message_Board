@@ -2,10 +2,18 @@
 <html>
   <head>
     <title><%= title %></title>
-    <link rel='stylesheet' href='/stylesheets/style.css' />
+    <link rel="stylesheet" href="/stylesheets/style.css" />
   </head>
   <body>
     <h1><%= title %></h1>
-    <p>Welcome to <%= title %></p>
+    <div class="messages">
+      <% for( let i = 0; i < messages.length; i++ ) { %>
+      <div class="message">
+        <span class="text">Text: <%= messages[i].text%></span>
+        <span class="user">User: <%= messages[i].user%></span>
+        <span class="date-added">Date added: <%= messages[i].added%></span>
+      </div>
+      <% } %>
+    </div>
   </body>
 </html>
